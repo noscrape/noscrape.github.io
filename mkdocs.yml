@@ -1,0 +1,17 @@
+site_name: Noscrape
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - javascript
+    - php
+    - java
+    - console
+    - shell
+
+nav:
+  - "Welcome": 'index.md'
+  - "Usage":
+    - "Java": 'java.md'
+    - "PHP": 'php.md'
+
