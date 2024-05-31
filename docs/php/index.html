@@ -94,16 +94,19 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="noscrape-php">Noscrape - PHP</h1>
-<h2 id="installation">Installation</h2>
-<p>To begin, install the NoScrape library using Composer, which allows you to effortlessly manage your project's dependencies:</p>
+<h2 id="installation"><br> Installation</h2>
+<p>To begin, install the <em>noscrape</em> library using Composer, which allows you to effortlessly manage your project's
+dependencies:</p>
 <pre><code>$ composer require noscrape/noscrape
 </code></pre>
-<h2 id="new-instance">New Instance</h2>
-<p>Create a new instance of the NoScrape class by providing the path to your desired font file. This sets up NoScrape to use the specified font for obfuscating text:</p>
+<h2 id="new-instance"><br> New Instance</h2>
+<p>Create a new instance of the <em>noscrape</em> class by providing the path to your desired font file. This sets up <em>noscrape</em>
+to use the specified font for obfuscating text:</p>
 <pre><code>$noscrape = new Noscrape("path/to/font.ttf");
 </code></pre>
-<h2 id="obfuscation">Obfuscation</h2>
-<p>Obfuscate your text by calling the obfuscate method on your NoScrape instance. This will convert your text into a series of unique characters from the Private Use Area (PUA) of Unicode, making it unreadable by standard means:</p>
+<h2 id="obfuscation"><br> Obfuscation</h2>
+<p>Obfuscate your text by calling the obfuscate method on your <em>noscrape</em> instance. This will convert your text into a
+series of unique characters from the Private Use Area (PUA) of Unicode, making it unreadable by standard means:</p>
 <pre><code>$obfuscatedText = $noscrape-&gt;obfuscate("text to obfuscate");
 
 echo $obfuscatedText;
@@ -134,15 +137,18 @@ $obfuscatedArray = $noscrape-&gt;obfuscate([
 ]
 */
 </code></pre>
-<h2 id="rendering">Rendering</h2>
-<p>Render the obfuscated font into a Base64-encoded string using the render method. This encoded string can then be embedded directly into your HTML for easy use:</p>
+<h2 id="rendering"><br> Rendering</h2>
+<p>Render the obfuscated font into a Base64-encoded string using the render method. This encoded string can then be
+embedded directly into your HTML for easy use:</p>
 <pre><code>$b64Font = $noscrape-&gt;render();
 
 echo $b64Font;
 &gt; T1RUTwAJAIAAAwAQQ0ZGIIaTIyUAAAVkAAARe09TLzL4TxrlAAABAAAAAGBjbWFwACT...
 </code></pre>
-<h2 id="putting-it-together">Putting it together</h2>
-<p>Combine everything into a complete HTML document. Embed the Base64-encoded font directly in your HTML using the @font-face rule and apply the obfuscated font to your text with CSS. This ensures that the obfuscated text is displayed correctly in the browser:</p>
+<h2 id="putting-it-together"><br> Putting it together</h2>
+<p>Combine everything into a complete HTML document. Embed the Base64-encoded font directly in your HTML using the
+@font-face rule and apply the obfuscated font to your text with CSS. This ensures that the obfuscated text is displayed
+correctly in the browser:</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -162,7 +168,10 @@ echo $b64Font;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h2 id="laravel-example">Laravel Example</h2>
+<h2 id="laravel-example"><br> Laravel Example</h2>
+<p>In a Laravel application, you can easily integrate <em>noscrape</em> by creating a new instance of the <em>noscrape</em> class in your
+controller or route. Use the public_path function to provide the path to your font file. Pass the obfuscated text and
+font to your view:</p>
 <pre><code>Route::get('/', function () {
     $noscrape = new Noscrape(public_path("font/anyfont.ttf"));
 
