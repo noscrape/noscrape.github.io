@@ -18,6 +18,33 @@ Obfuscate your text by calling the obfuscate method on your NoScrape instance. T
     echo $obfuscatedText;
     > 
 
+
+
+
+    // one could also obfuscate an integer
+    $obfuscatedInt = $noscrape->obfuscate(1337);
+
+
+
+
+    // or an array
+    $obfuscatedArray = $noscrape->obfuscate([
+        "test" => "This is a Test",
+        "another" => [
+            "test" => "This is another Test",
+        ]
+    ]);
+    /*
+    [
+        "test" => "",
+        "another" => [
+            "test" => "",
+        ]
+    ]
+    */
+
+
+
 ## Rendering
 Render the obfuscated font into a Base64-encoded string using the render method. This encoded string can then be embedded directly into your HTML for easy use:
     

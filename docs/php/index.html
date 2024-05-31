@@ -108,6 +108,31 @@
 
 echo $obfuscatedText;
 &gt; 
+
+
+
+
+// one could also obfuscate an integer
+$obfuscatedInt = $noscrape-&gt;obfuscate(1337);
+
+
+
+
+// or an array
+$obfuscatedArray = $noscrape-&gt;obfuscate([
+    "test" =&gt; "This is a Test",
+    "another" =&gt; [
+        "test" =&gt; "This is another Test",
+    ]
+]);
+/*
+[
+    "test" =&gt; "",
+    "another" =&gt; [
+        "test" =&gt; "",
+    ]
+]
+*/
 </code></pre>
 <h2 id="rendering">Rendering</h2>
 <p>Render the obfuscated font into a Base64-encoded string using the render method. This encoded string can then be embedded directly into your HTML for easy use:</p>
