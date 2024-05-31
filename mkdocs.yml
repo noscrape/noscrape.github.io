@@ -1,4 +1,6 @@
 site_name: Noscrape
+site_dir: docs
+docs_dir: src
 theme:
   name: readthedocs
   highlightjs: true
