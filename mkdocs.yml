@@ -10,7 +10,8 @@ theme:
     - java
     - console
     - shell
-
+extra_javascript:
+  - "js/analytics.js"
 nav:
   - "Welcome": 'index.md'
   - "Usage":
