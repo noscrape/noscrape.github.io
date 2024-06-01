@@ -3,6 +3,7 @@ site_dir: docs
 docs_dir: src
 theme:
   name: readthedocs
+  custom_dir: 'custom_theme'
   highlightjs: true
   hljs_languages:
     - javascript
@@ -14,6 +15,7 @@ extra_javascript:
   - "js/analytics.js"
 nav:
   - "Welcome": 'index.md'
+  - "Use-Cases": 'use-cases.md'
   - "Usage":
     - "Java": 'java.md'
     - "PHP": 'php.md'

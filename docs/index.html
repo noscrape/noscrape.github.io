@@ -26,7 +26,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/java.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/console.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/shell.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+      <script>hljs.highlightAll();</script>
+<meta name="google-site-verification" content="9vYw3s5f_GBy5SIzl-AV3PvhmWNt81D9h9b0YyXJ0ME" />
+
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -49,18 +51,6 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#concept">Concept</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#use-cases">Use-Cases</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#anti-scraping-measures-for-websites">Anti-Scraping Measures for Websites</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#protecting-sensitive-data">Protecting Sensitive Data</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#reduce-bot-interactions">Reduce Bot Interactions</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#secure-applications">Secure Applications</a>
-    </li>
-        </ul>
-    </li>
     <li class="toctree-l2"><a class="reference internal" href="#language-implementations">Language Implementations</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#platform-implementation">Platform Implementation</a>
@@ -82,6 +72,10 @@
         </ul>
     </li>
     </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="use-cases/">Use-Cases</a>
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Usage</span></p>
@@ -119,26 +113,6 @@
 <h2 id="concept">Concept</h2>
 <p>The primary mechanism behind noscrape is the utilization of any true-type font. Noscrape generates a new version with shuffled unicodes, ensuring that it's impossible to reverse-calculate them. This means that both strings and integers are obfuscated and can only be deciphered using the generated obfuscation-font.</p>
 <p>While the glyph-paths inside the font cannot be entirely removed, they are obfuscated by randomly shifting them slightly. This makes it challenging to reverse-calculate them, though not entirely impossible, especially for machine learning algorithms. We are open to suggestions for improving this aspect.</p>
-<h2 id="use-cases">Use-Cases</h2>
-<p>In an era where artificial intelligence is becoming increasingly integral to our daily lives, it's important to remember that AI thrives on data, and your data is a valuable commodity that shouldn't be given away lightly. Here are some key use-cases for noscrape:</p>
-<h3 id="anti-scraping-measures-for-websites">Anti-Scraping Measures for Websites</h3>
-<p>Implement noscrape on your website to protect against web scrapers. This can be particularly useful for content that is unique to your site, which you wish to prevent from being copied or used without permission. Examples include:</p>
-<ul>
-<li>Sport results</li>
-<li>Betting results</li>
-<li>Prices (e-commerce)</li>
-<li>Geo-information</li>
-</ul>
-<h3 id="protecting-sensitive-data">Protecting Sensitive Data</h3>
-<p>Use noscrape to obfuscate sensitive information such as personal identifiers, financial details, or confidential text in a way that is visually accessible but protected against scraping and automated data extraction tools.</p>
-<h3 id="reduce-bot-interactions">Reduce Bot Interactions</h3>
-<p>Once your data is protected by noscrape, it makes no sense for scrapers to target it, thereby reducing the number of bot interactions and lowering associated costs.</p>
-<h3 id="secure-applications">Secure Applications</h3>
-<p>In applications where data security is paramount, such as in banking or healthcare apps, noscrape can be used to display information in a secure manner. Examples include:</p>
-<ul>
-<li>PIN/TAN numbers</li>
-<li>Bot protection (captcha)</li>
-</ul>
 <h2 id="language-implementations">Language Implementations</h2>
 <ul>
 <li><a href="java/">Java Implementation</a></li>
@@ -185,7 +159,7 @@
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="java/" class="btn btn-neutral float-right" title="Java">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="use-cases/" class="btn btn-neutral float-right" title="Use-Cases">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -209,7 +183,7 @@
     
     
     
-      <span><a href="java/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="use-cases/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
@@ -230,5 +204,5 @@
 
 <!--
 MkDocs version : 1.6.0
-Build Date UTC : 2024-06-01 11:35:49.858609+00:00
+Build Date UTC : 2024-06-01 14:39:06.737436+00:00
 -->
