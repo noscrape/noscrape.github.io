@@ -14,8 +14,9 @@ theme:
 extra_javascript:
   - "js/analytics.js"
 nav:
-  - "Welcome": 'index.md'
-  - "Use-Cases": 'use-cases.md'
+  - "Introduction": 'index.md'
+  - "Use Cases": 'use-cases.md'
+  - "NON-Use Cases": 'non-use-cases.md'
   - "Usage":
     - "Java": 'java.md'
     - "PHP": 'php.md'
