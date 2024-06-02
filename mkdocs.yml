@@ -1,5 +1,8 @@
 site_name: Noscrape
 site_dir: docs
+site_url: "https://noscrape.github.io"
+site_author: "Bernhard Schönberger"
+site_description: "Documentation about Noscrape-Library"
 docs_dir: src
 theme:
   name: readthedocs
