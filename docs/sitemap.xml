@@ -6,21 +6,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://noscrape.github.io/install/</loc>
-         <lastmod>2024-06-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://noscrape.github.io/java/</loc>
-         <lastmod>2024-06-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://noscrape.github.io/node/</loc>
-         <lastmod>2024-06-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://noscrape.github.io/non-use-cases/</loc>
          <lastmod>2024-06-02</lastmod>
          <changefreq>daily</changefreq>
