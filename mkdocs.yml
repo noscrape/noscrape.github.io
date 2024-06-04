@@ -22,6 +22,6 @@ nav:
   - "NON-Use Cases": 'non-use-cases.md'
   - "Usage":
     # - "Java": 'java.md'
-    # - "NodeJS": 'nodejs.md'
+    - "NodeJS": 'nodejs.md'
     - "PHP": 'php.md'
 
