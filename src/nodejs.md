@@ -1,4 +1,4 @@
-# Noscrape - PHP
+# Noscrape - Node
 
 ## <br> Installation
 
