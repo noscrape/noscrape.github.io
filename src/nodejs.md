@@ -49,7 +49,7 @@ embedded directly into your HTML for easy use:
 
     const b64Font = noscrape.render();
 
-    console.log(obfuscatedText.toString("base64");
+    console.log(b64Font.toString("base64");
     > T1RUTwAJAIAAAwAQQ0ZGIIaTIyUAAAVkAAARe09TLzL4TxrlAAABAAAAAGBjbWFwACT...
 
 ## <br> Putting it together
