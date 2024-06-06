@@ -28,6 +28,8 @@ theme:
     - shell
 extra_javascript:
   - "js/analytics.js"
+extra_css:
+  - "css/extra.css"
 nav:
   - "Introduction": 'index.md'
   - "Use Cases": 'use-cases.md'
