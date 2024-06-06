@@ -1,39 +1,49 @@
+---
+title: Noscrape PHP
+repo_url: https://github.com/noscrape/noscrape-php
+---
+
 # Noscrape - PHP
 
 ## <br> Installation
 
 To begin, install the *noscrape* library using Composer, which allows you to effortlessly manage your project's
 dependencies:
-
-    $ composer require noscrape/noscrape
+``` shell
+$ composer require noscrape/noscrape
+```
 
 ## <br> New Instance
 
 Create a new instance of the *noscrape* class by providing the path to your desired font file. This sets up *noscrape*
 to use the specified font for obfuscating text:
-
-    $noscrape = new Noscrape("path/to/font.ttf");
+```php 
+$noscrape = new Noscrape("path/to/font.ttf");
+```
 
 ## <br> Obfuscation
 
 Obfuscate your text by calling the obfuscate method on your *noscrape* instance. This will convert your text into a
-series of unique characters from the Private Use Area (PUA) of Unicode, making it unreadable by standard means:
+series of unique characters from the Private Use Area (PUA) of Unicode, making it unreadable by standard means.
 
+
+##### <br /> obfuscate text
+```php 
     $obfuscatedText = $noscrape->obfuscate("text to obfuscate");
 
     echo $obfuscatedText;
     > 
+```
 
 
-
-
-    // one could also obfuscate an integer
+##### <br /> obfuscate a number
+```php 
     $obfuscatedInt = $noscrape->obfuscate(1337);
+```
 
 
-
-
-    // or an array
+##### <br /> obfuscate an array
+```php 
     $obfuscatedArray = $noscrape->obfuscate([
         "test" => "This is a Test",
         "another" => [
@@ -48,6 +58,7 @@ series of unique characters from the Private Use Area (PUA) of Unicode, making i
         ]
     ]
     */
+```
 
 ## <br> Rendering
 

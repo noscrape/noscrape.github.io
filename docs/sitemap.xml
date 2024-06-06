@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://noscrape.github.io/</loc>
-         <lastmod>2024-06-04</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://noscrape.github.io/nodejs/</loc>
-         <lastmod>2024-06-04</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://noscrape.github.io/non-use-cases/</loc>
-         <lastmod>2024-06-04</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://noscrape.github.io/php/</loc>
-         <lastmod>2024-06-04</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://noscrape.github.io/use-cases/</loc>
-         <lastmod>2024-06-04</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

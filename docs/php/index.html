@@ -69,6 +69,14 @@
     <li class="toctree-l2"><a class="reference internal" href="#new-instance">New Instance</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#obfuscation">Obfuscation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#obfuscate-text">obfuscate text</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#obfuscate-a-number">obfuscate a number</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#obfuscate-an-array">obfuscate an array</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#rendering">Rendering</a>
     </li>
@@ -96,6 +104,7 @@
           <li class="breadcrumb-item">Usage</li>
       <li class="breadcrumb-item active">PHP</li>
     <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/noscrape/edit/master/docs/php.md">Edit on Noscrape</a>
     </li>
   </ul>
   <hr/>
@@ -107,45 +116,40 @@
 <h2 id="installation"><br> Installation</h2>
 <p>To begin, install the <em>noscrape</em> library using Composer, which allows you to effortlessly manage your project's
 dependencies:</p>
-<pre><code>$ composer require noscrape/noscrape
+<pre><code class="language-shell">$ composer require noscrape/noscrape
 </code></pre>
 <h2 id="new-instance"><br> New Instance</h2>
 <p>Create a new instance of the <em>noscrape</em> class by providing the path to your desired font file. This sets up <em>noscrape</em>
 to use the specified font for obfuscating text:</p>
-<pre><code>$noscrape = new Noscrape("path/to/font.ttf");
+<pre><code class="language-php">$noscrape = new Noscrape(&quot;path/to/font.ttf&quot;);
 </code></pre>
 <h2 id="obfuscation"><br> Obfuscation</h2>
 <p>Obfuscate your text by calling the obfuscate method on your <em>noscrape</em> instance. This will convert your text into a
-series of unique characters from the Private Use Area (PUA) of Unicode, making it unreadable by standard means:</p>
-<pre><code>$obfuscatedText = $noscrape-&gt;obfuscate("text to obfuscate");
+series of unique characters from the Private Use Area (PUA) of Unicode, making it unreadable by standard means.</p>
+<h5 id="obfuscate-text"><br /> obfuscate text</h5>
+<pre><code class="language-php">    $obfuscatedText = $noscrape-&gt;obfuscate(&quot;text to obfuscate&quot;);
 
-echo $obfuscatedText;
-&gt; 
-
-
-
-
-// one could also obfuscate an integer
-$obfuscatedInt = $noscrape-&gt;obfuscate(1337);
-
-
-
-
-// or an array
-$obfuscatedArray = $noscrape-&gt;obfuscate([
-    "test" =&gt; "This is a Test",
-    "another" =&gt; [
-        "test" =&gt; "This is another Test",
+    echo $obfuscatedText;
+    &gt; 
+</code></pre>
+<h5 id="obfuscate-a-number"><br /> obfuscate a number</h5>
+<pre><code class="language-php">    $obfuscatedInt = $noscrape-&gt;obfuscate(1337);
+</code></pre>
+<h5 id="obfuscate-an-array"><br /> obfuscate an array</h5>
+<pre><code class="language-php">    $obfuscatedArray = $noscrape-&gt;obfuscate([
+        &quot;test&quot; =&gt; &quot;This is a Test&quot;,
+        &quot;another&quot; =&gt; [
+            &quot;test&quot; =&gt; &quot;This is another Test&quot;,
+        ]
+    ]);
+    /*
+    [
+        &quot;test&quot; =&gt; &quot;&quot;,
+        &quot;another&quot; =&gt; [
+            &quot;test&quot; =&gt; &quot;&quot;,
+        ]
     ]
-]);
-/*
-[
-    "test" =&gt; "",
-    "another" =&gt; [
-        "test" =&gt; "",
-    ]
-]
-*/
+    */
 </code></pre>
 <h2 id="rendering"><br> Rendering</h2>
 <p>Render the obfuscated font into a Base64-encoded string using the render method. This encoded string can then be
@@ -217,6 +221,10 @@ font to your view:</p>
 
   <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/noscrape" class="fa fa-code-fork" style="color: #fcfcfc"> Noscrape</a>
+        </span>
     
     
       <span><a href="../nodejs/" style="color: #fcfcfc">&laquo; Previous</a></span>

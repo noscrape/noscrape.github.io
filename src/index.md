@@ -1,4 +1,4 @@
-# Welcome to noscrape Documentation
+# Welcome to *noscrape*
 
 Welcome to the official documentation for **noscrape**! This guide will help you understand the concept, usage, and benefits of integrating noscrape into your projects.
 
@@ -8,7 +8,24 @@ The primary mechanism behind noscrape is the utilization of any true-type font. 
 
 While the glyph-paths inside the font cannot be entirely removed, they are obfuscated by randomly shifting them slightly. This makes it challenging to reverse-calculate them, though not entirely impossible, especially for machine learning algorithms. We are open to suggestions for improving this aspect.
 
-## Platform Implementation
+``` mermaid
+sequenceDiagram
+    participant User
+    participant Server
+    participant Noscrape
+
+    User->>Server: Send Request
+    Server->>Noscrape: Initialize noscrape
+    Server->>Noscrape: obfuscatedText1 = noscrape.obfuscate("text to obfuscate")
+    Server->>Noscrape: obfuscatedText2 = noscrape.obfuscate("another textblock")
+    Noscrape-->>Server: Return Obfuscated Text
+    Server->>Noscrape: font = noscrape.render()
+    Noscrape-->>Server: Return Generated Font
+    Server->>User: Send HTML Response with Obfuscated Text and Embedded Font
+```
+
+
+## <br /> Platform Implementation
 
 **noscrape** is not implemented directly in every programming language. Instead, it utilizes platform-specific binaries to achieve its functionality. These binaries include:
 

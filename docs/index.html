@@ -1,107 +1,114 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+
+<html class="writer-html5" lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Documentation about Noscrape-Library" /><meta name="author" content="Bernhard Schönberger" /><link rel="canonical" href="https://noscrape.github.io/" />
-      <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>Noscrape</title>
-    <link rel="stylesheet" href="css/theme.css" />
-    <link rel="stylesheet" href="css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
-    
-      <script>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Documentation about Noscrape-Library" name="description"/><meta content="Bernhard Schönberger" name="author"/><link href="https://noscrape.github.io/" rel="canonical"/>
+<link href="img/favicon.ico" rel="shortcut icon"/>
+<title>Noscrape</title>
+<link href="css/theme.css" rel="stylesheet"/>
+<link href="css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
+<script>
         // Current page data
         var mkdocs_page_name = "Introduction";
         var mkdocs_page_input_path = "index.md";
         var mkdocs_page_url = "/";
       </script>
-    
-    <!--[if lt IE 9]>
+<!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/javascript.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/php.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/java.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/console.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/shell.min.js"></script>
-      <script>hljs.highlightAll();</script>
-<meta name="google-site-verification" content="9vYw3s5f_GBy5SIzl-AV3PvhmWNt81D9h9b0YyXJ0ME" />
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/php.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/java.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/console.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/shell.min.js"></script>
+<script>hljs.highlightAll();</script>
+<meta content="9vYw3s5f_GBy5SIzl-AV3PvhmWNt81D9h9b0YyXJ0ME" name="google-site-verification"/>
 </head>
-
 <body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href="." class="icon icon-home"> Noscrape
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href="."> Noscrape
         </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
+<form action="./search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
 </div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Introduction</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#concept">Concept</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#platform-implementation">Platform Implementation</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#wrapper-implementations">Wrapper Implementations</a>
-    </li>
-    </ul>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="use-cases/">Use Cases</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="non-use-cases/">NON-Use Cases</a>
-                </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Usage</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="nodejs/">NodeJS</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="php/">PHP</a>
-                  </li>
-              </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href=".">Noscrape</a>
-        
-      </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Introduction</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
-              
-                <h1 id="welcome-to-noscrape-documentation">Welcome to noscrape Documentation</h1>
+<div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="#">Introduction</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#concept">Concept</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#platform-implementation">Platform Implementation</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#wrapper-implementations">Wrapper Implementations</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="use-cases/">Use Cases</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="non-use-cases/">NON-Use Cases</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="nodejs/">NodeJS</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="php/">PHP</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="Mobile navigation menu" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href=".">Noscrape</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a aria-label="Docs" class="icon icon-home" href="."></a></li>
+<li class="breadcrumb-item active">Introduction</li>
+<li class="wy-breadcrumbs-aside">
+<a href="https://github.com/noscrape/edit/master/docs/index.md">Edit on Noscrape</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div class="section" itemprop="articleBody">
+<h1 id="welcome-to-noscrape">Welcome to <em>noscrape</em></h1>
 <p>Welcome to the official documentation for <strong>noscrape</strong>! This guide will help you understand the concept, usage, and benefits of integrating noscrape into your projects.</p>
 <h2 id="concept">Concept</h2>
 <p>The primary mechanism behind noscrape is the utilization of any true-type font. Noscrape generates a new version with shuffled unicodes, ensuring that it's impossible to reverse-calculate them. This means that both strings and integers are obfuscated and can only be deciphered using the generated obfuscation-font.</p>
 <p>While the glyph-paths inside the font cannot be entirely removed, they are obfuscated by randomly shifting them slightly. This makes it challenging to reverse-calculate them, though not entirely impossible, especially for machine learning algorithms. We are open to suggestions for improving this aspect.</p>
-<h2 id="platform-implementation">Platform Implementation</h2>
+<div class="mermaid">sequenceDiagram
+    participant User
+    participant Server
+    participant Noscrape
+
+    User-&gt;&gt;Server: Send Request
+    Server-&gt;&gt;Noscrape: Initialize noscrape
+    Server-&gt;&gt;Noscrape: obfuscatedText1 = noscrape.obfuscate("text to obfuscate")
+    Server-&gt;&gt;Noscrape: obfuscatedText2 = noscrape.obfuscate("another textblock")
+    Noscrape--&gt;&gt;Server: Return Obfuscated Text
+    Server-&gt;&gt;Noscrape: font = noscrape.render()
+    Noscrape--&gt;&gt;Server: Return Generated Font
+    Server-&gt;&gt;User: Send HTML Response with Obfuscated Text and Embedded Font
+</div>
+<h2 id="platform-implementation"><br/> Platform Implementation</h2>
 <p><strong>noscrape</strong> is not implemented directly in every programming language. Instead, it utilizes platform-specific binaries to achieve its functionality. These binaries include:</p>
 <ul>
 <li><code>noscrape_darwin_arm64</code></li>
@@ -122,56 +129,47 @@
 <li>Returning the obfuscated text or other outputs back to the application.</li>
 </ul>
 <p>By utilizing wrappers, <strong>noscrape</strong> can seamlessly integrate with a wide range of programming languages and environments while maintaining its core functionality across different platforms.</p>
-<hr />
+<hr/>
 <p>Let's make the web a safer place with noscrape!</p>
-              
-            </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="use-cases/" class="btn btn-neutral float-right" title="Use Cases">Next <span class="icon icon-circle-arrow-right"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
+</div>
+</div><footer>
+<div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-right" href="use-cases/" title="Use Cases">Next <span class="icon icon-circle-arrow-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-          
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-    
-      <span><a href="use-cases/" style="color: #fcfcfc">Next &raquo;</a></span>
-    
-  </span>
 </div>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = ".";</script>
-    <script src="js/theme_extra.js"></script>
-    <script src="js/theme.js"></script>
-      <script src="js/analytics.js"></script>
-      <script src="search/main.js"></script>
-    <script>
+</div>
+</section>
+</div>
+<div aria-label="Versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span>
+<a class="fa fa-code-fork" href="https://github.com/noscrape" style="color: #fcfcfc"> Noscrape</a>
+</span>
+<span><a href="use-cases/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>var base_url = ".";</script>
+<script src="js/theme_extra.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/analytics.js"></script>
+<script src="search/main.js"></script>
+<script>
         jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
         });
     </script>
-
-</body>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.9.1/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
 </html>
-
 <!--
 MkDocs version : 1.6.0
-Build Date UTC : 2024-06-04 20:02:30.715927+00:00
+Build Date UTC : 2024-06-06 19:32:13.678447+00:00
 -->

@@ -1,11 +1,32 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+
 site_name: Noscrape
 site_dir: docs
 site_url: "https://noscrape.github.io"
 site_author: "Bernhard Schönberger"
 site_description: "Documentation about Noscrape-Library"
+repo_url: "https://github.com/noscrape"
+repo_name: "Noscrape"
 docs_dir: src
+plugins:
+  - search
+  - mermaid2:
+      version: 10.9.1
+
+markdown_extensions:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.snippets:
+  - pymdownx.inlinehilite:
+
+
 theme:
   name: readthedocs
+  language: 'en'
   custom_dir: 'custom_theme'
   highlightjs: true
   hljs_languages:
