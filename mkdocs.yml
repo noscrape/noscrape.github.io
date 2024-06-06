@@ -14,6 +14,7 @@ plugins:
   mermaid2:
     version: 10.9.1
   ultralytics:
+    default_image: "https://raw.githubusercontent.com/noscrape/.github/main/profile/preview-1.png"
 
 theme:
   name: readthedocs
