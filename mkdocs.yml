@@ -10,19 +10,10 @@ repo_url: "https://github.com/noscrape"
 repo_name: "Noscrape"
 docs_dir: src
 plugins:
-  - search
-  - mermaid2:
-      version: 10.9.1
-
-markdown_extensions:
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.snippets:
-  - pymdownx.inlinehilite:
-
+  search:
+  mermaid2:
+    version: 10.9.1
+  ultralytics:
 
 theme:
   name: readthedocs

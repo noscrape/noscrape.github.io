@@ -1,3 +1,12 @@
+---
+title: Noscrape Introduction
+summary: A Description about how noscrape works and how it could help you to secure your content from scraping
+authors:
+  - Bernhard Schönberger
+date: 2024-06-06
+noscrape_url: https://github.com/noscrape
+---
+
 # Welcome to *noscrape*
 
 Welcome to the official documentation for **noscrape**! This guide will help you understand the concept, usage, and benefits of integrating noscrape into your projects.

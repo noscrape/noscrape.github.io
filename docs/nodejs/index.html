@@ -1,115 +1,107 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+
+<html class="writer-html5" lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Bernhard Schönberger" /><link rel="canonical" href="https://noscrape.github.io/nodejs/" />
-      <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>NodeJS - Noscrape</title>
-    <link rel="stylesheet" href="../css/theme.css" />
-    <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
-    
-      <script>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Bernhard Schönberger" name="author"/><link href="https://noscrape.github.io/nodejs/" rel="canonical"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>NodeJS - Noscrape</title>
+<link href="../css/theme.css" rel="stylesheet"/>
+<link href="../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
+<script>
         // Current page data
         var mkdocs_page_name = "NodeJS";
         var mkdocs_page_input_path = "nodejs.md";
         var mkdocs_page_url = "/nodejs/";
       </script>
-    
-    <!--[if lt IE 9]>
+<!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/javascript.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/php.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/java.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/console.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/shell.min.js"></script>
-      <script>hljs.highlightAll();</script>
-<meta name="google-site-verification" content="9vYw3s5f_GBy5SIzl-AV3PvhmWNt81D9h9b0YyXJ0ME" />
-
-</head>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/php.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/java.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/console.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/shell.min.js"></script>
+<script>hljs.highlightAll();</script>
+<meta content="9vYw3s5f_GBy5SIzl-AV3PvhmWNt81D9h9b0YyXJ0ME" name="google-site-verification"/>
+<meta content="NodeJS" name="title"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/><meta content="website" property="og:type"/><meta content="https://noscrape.github.io/nodejs" property="og:url"/><meta content="NodeJS" property="og:title"/><meta content="To begin, install the noscrape library using npm:" property="og:description"/><meta content="summary_large_image" property="twitter:card"/><meta content="https://noscrape.github.io/nodejs" property="twitter:url"/><meta content="NodeJS" property="twitter:title"/><meta content="To begin, install the noscrape library using npm:" property="twitter:description"/></head>
 <body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Noscrape
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href=".."> Noscrape
         </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
+<form action="../search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="Search docs" name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
 </div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../use-cases/">Use Cases</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../non-use-cases/">NON-Use Cases</a>
-                </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Usage</span></p>
-              <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">NodeJS</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#new-instance">New Instance</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#obfuscation">Obfuscation</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#rendering">Rendering</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#putting-it-together">Putting it together</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#running-example">Running Example</a>
-    </li>
-    </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../php/">PHP</a>
-                  </li>
-              </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Noscrape</a>
-        
-      </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Usage</li>
-      <li class="breadcrumb-item active">NodeJS</li>
-    <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/noscrape/edit/master/docs/nodejs.md">Edit on Noscrape</a>
-    </li>
-  </ul>
-  <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
-              
-                <h1 id="noscrape-node">Noscrape - Node</h1>
-<h2 id="installation"><br> Installation</h2>
+<div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../use-cases/">Use Cases</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../non-use-cases/">NON-Use Cases</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Usage</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="#">NodeJS</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#new-instance">New Instance</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#obfuscation">Obfuscation</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rendering">Rendering</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#putting-it-together">Putting it together</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#running-example">Running Example</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../php/">PHP</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="Mobile navigation menu" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="..">Noscrape</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a aria-label="Docs" class="icon icon-home" href=".."></a></li>
+<li class="breadcrumb-item">Usage</li>
+<li class="breadcrumb-item active">NodeJS</li>
+<li class="wy-breadcrumbs-aside">
+<a href="https://github.com/noscrape/edit/master/docs/nodejs.md">Edit on Noscrape</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div class="section" itemprop="articleBody">
+<h1 id="noscrape-node">Noscrape - Node</h1>
+<h2 id="installation"><br/> Installation</h2>
 <p>To begin, install the <em>noscrape</em> library using <code>npm</code>:</p>
 <pre><code>$ npm install noscrape
 </code></pre>
-<h2 id="new-instance"><br> New Instance</h2>
+<h2 id="new-instance"><br/> New Instance</h2>
 <p>Create a new instance of the <em>noscrape</em> class by providing the path to your desired font file. This sets up <em>noscrape</em>
 to use the specified font for obfuscating text:</p>
 <pre><code># with require
@@ -120,7 +112,7 @@ import { Noscrape } from "noscrape";
 
 const noscrape = new Noscrape("path/to/font.ttf");
 </code></pre>
-<h2 id="obfuscation"><br> Obfuscation</h2>
+<h2 id="obfuscation"><br/> Obfuscation</h2>
 <p>Obfuscate your text by calling the obfuscate method on your <em>noscrape</em> instance. This will convert your text into a
 series of unique characters from the Private Use Area (PUA) of Unicode, making it unreadable by standard means:</p>
 <pre><code>const obfuscatedText = noscrape.obfuscate("text to obfuscate");
@@ -141,7 +133,7 @@ obfuscatedArray = noscrape.obfuscate({
     }
 });
 </code></pre>
-<h2 id="rendering"><br> Rendering</h2>
+<h2 id="rendering"><br/> Rendering</h2>
 <p>Render the obfuscated font into a Base64-encoded string using the render method. This encoded string can then be
 embedded directly into your HTML for easy use:</p>
 <pre><code>const b64Font = noscrape.render();
@@ -149,7 +141,7 @@ embedded directly into your HTML for easy use:</p>
 console.log(b64Font.toString("base64");
 &gt; T1RUTwAJAIAAAwAQQ0ZGIIaTIyUAAAVkAAARe09TLzL4TxrlAAABAAAAAGBjbWFwACT...
 </code></pre>
-<h2 id="putting-it-together"><br> Putting it together</h2>
+<h2 id="putting-it-together"><br/> Putting it together</h2>
 <p>Combine everything into a complete HTML document. Embed the Base64-encoded font directly in your HTML using the
 @font-face rule and apply the obfuscated font to your text with CSS. This ensures that the obfuscated text is displayed
 correctly in the browser:</p>
@@ -168,63 +160,49 @@ correctly in the browser:</p>
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h2 id="running-example"><br> Running Example</h2>
+<h2 id="running-example"><br/> Running Example</h2>
 <pre><code>$ git clone git@github.com:noscrape/noscrape-node-example.git
 $ cd noscrape-node-example
 $ npm install
 $ node src/index.js
 </code></pre>
 <p>open <a href="http://localhost:1234">http://localhost:1234</a></p>
-              
-            </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../non-use-cases/" class="btn btn-neutral float-left" title="NON-Use Cases"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../php/" class="btn btn-neutral float-right" title="PHP">Next <span class="icon icon-circle-arrow-right"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
+</div>
+</div><footer>
+<div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-left" href="../non-use-cases/" title="NON-Use Cases"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-right" href="../php/" title="PHP">Next <span class="icon icon-circle-arrow-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-          
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-        <span>
-          <a href="https://github.com/noscrape" class="fa fa-code-fork" style="color: #fcfcfc"> Noscrape</a>
-        </span>
-    
-    
-      <span><a href="../non-use-cases/" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../php/" style="color: #fcfcfc">Next &raquo;</a></span>
-    
-  </span>
 </div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../js/analytics.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
+</div>
+</section>
+</div>
+<div aria-label="Versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span>
+<a class="fa fa-code-fork" href="https://github.com/noscrape" style="color: #fcfcfc"> Noscrape</a>
+</span>
+<span><a href="../non-use-cases/" style="color: #fcfcfc">« Previous</a></span>
+<span><a href="../php/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script>var base_url = "..";</script>
+<script src="../js/theme_extra.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/analytics.js"></script>
+<script src="../search/main.js"></script>
+<script>
         jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
         });
     </script>
-
 </body>
 </html>
