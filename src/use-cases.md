@@ -78,7 +78,7 @@ For real estate websites, *noscrape* can protect property listings, prices, and 
 If you have another interesting use case for the *noscrape* library that you'd like to share with others,
 we'd love to hear from you!
 Please feel
-free to share your use cases with us so that we can add them here and other users can benefit from your experiences.
+free to [share your use cases with us](mailto:noscrape@gmx.de) so that we can add them here and other users can benefit from your experiences.
 
 By leveraging *noscrape* in these various use-cases, you can effectively safeguard your valuable data, enhance security,
 and ensure that your content remains accessible only to authorized users.
