@@ -4,7 +4,7 @@ repo_url: 'https://github.com/noscrape/noscrape-node'
 ---
 # Noscrape - Python
 
-Noscrape is a Python library that protects your web content from scraping. It uses true-type fonts with shuffled unicodes to obfuscate text, making it unreadable by standard methods while still displaying correctly in browsers. This tool helps developers secure their websites from data harvesting and unauthorized scraping.
+*Noscrape* is a Python library that protects your web content from scraping. It uses true-type fonts with shuffled unicodes to obfuscate text, making it unreadable by standard methods while still displaying correctly in browsers. This tool helps developers secure their websites from data harvesting and unauthorized scraping.
 
 <br>
 
