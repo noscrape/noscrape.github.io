@@ -39,4 +39,5 @@ nav:
     # - "Java": 'java.md'
     - "NodeJS": 'nodejs.md'
     - "PHP": 'php.md'
+    - "Python": 'python.md'
 

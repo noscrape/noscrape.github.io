@@ -4,18 +4,18 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Bernhard Schönberger" name="author"/><link href="https://noscrape.github.io/nodejs/" rel="canonical"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Bernhard Schönberger" name="author"/><link href="https://noscrape.github.io/python/" rel="canonical"/>
 <link href="../img/favicon.ico" rel="shortcut icon"/>
-<title>NodeJS - Noscrape</title>
+<title>Python - Noscrape</title>
 <link href="../css/theme.css" rel="stylesheet"/>
 <link href="../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
 <link href="../css/extra.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "NodeJS";
-        var mkdocs_page_input_path = "nodejs.md";
-        var mkdocs_page_url = "/nodejs/";
+        var mkdocs_page_name = "Python";
+        var mkdocs_page_input_path = "python.md";
+        var mkdocs_page_url = "/python/";
       </script>
 <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
@@ -28,7 +28,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/shell.min.js"></script>
 <script>hljs.highlightAll();</script>
 <meta content="9vYw3s5f_GBy5SIzl-AV3PvhmWNt81D9h9b0YyXJ0ME" name="google-site-verification"/>
-<meta content="NodeJS" name="title"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/><meta content="website" property="og:type"/><meta content="https://noscrape.github.io/nodejs" property="og:url"/><meta content="NodeJS" property="og:title"/><meta content="To begin, install the noscrape library using npm:" property="og:description"/><meta content="https://raw.githubusercontent.com/noscrape/.github/main/profile/preview-1.png" property="og:image"/><meta content="summary_large_image" property="twitter:card"/><meta content="https://noscrape.github.io/nodejs" property="twitter:url"/><meta content="NodeJS" property="twitter:title"/><meta content="To begin, install the noscrape library using npm:" property="twitter:description"/><meta content="https://raw.githubusercontent.com/noscrape/.github/main/profile/preview-1.png" property="twitter:image"/></head>
+<meta content="Python" name="title"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/><meta content="website" property="og:type"/><meta content="https://noscrape.github.io/python" property="og:url"/><meta content="Python" property="og:title"/><meta content="Noscrape is a Python library that protects your web content from scraping. It uses true-type fonts with shuffled unicodes to obfuscate text, making it unreadable by standard methods while still displaying correctly in browsers. This tool helps developers secure their websites from data harvesting and unauthorized scraping." property="og:description"/><meta content="https://raw.githubusercontent.com/noscrape/.github/main/profile/preview-1.png" property="og:image"/><meta content="summary_large_image" property="twitter:card"/><meta content="https://noscrape.github.io/python" property="twitter:url"/><meta content="Python" property="twitter:title"/><meta content="Noscrape is a Python library that protects your web content from scraping. It uses true-type fonts with shuffled unicodes to obfuscate text, making it unreadable by standard methods while still displaying correctly in browsers. This tool helps developers secure their websites from data harvesting and unauthorized scraping." property="twitter:description"/><meta content="https://raw.githubusercontent.com/noscrape/.github/main/profile/preview-1.png" property="twitter:image"/></head>
 <body class="wy-body-for-nav" role="document">
 <div class="wy-grid-for-nav">
 <nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
@@ -56,7 +56,11 @@
 </ul>
 <p class="caption"><span class="caption-text">Usage</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal current" href="#">NodeJS</a>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs/">NodeJS</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../php/">PHP</a>
+</li>
+<li class="toctree-l1 current"><a class="reference internal current" href="#">Python</a>
 <ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
 </li>
@@ -68,13 +72,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#putting-it-together">Putting it together</a>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#running-example">Running Example</a>
-</li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../php/">PHP</a>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../python/">Python</a>
 </li>
 </ul>
 </div>
@@ -90,91 +88,76 @@
 <ul class="wy-breadcrumbs">
 <li><a aria-label="Docs" class="icon icon-home" href=".."></a></li>
 <li class="breadcrumb-item">Usage</li>
-<li class="breadcrumb-item active">NodeJS</li>
+<li class="breadcrumb-item active">Python</li>
 <li class="wy-breadcrumbs-aside">
-<a href="https://github.com/noscrape/edit/master/docs/nodejs.md">Edit on Noscrape</a>
+<a href="https://github.com/noscrape/edit/master/docs/python.md">Edit on Noscrape</a>
 </li>
 </ul>
 <hr/>
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h1 id="noscrape-node">Noscrape - Node</h1>
-<h2 id="installation"><br/> Installation</h2>
-<p>To begin, install the <em>noscrape</em> library using <code>npm</code>:</p>
-<pre><code>$ npm install noscrape
+<h1 id="noscrape-python">Noscrape - Python</h1>
+<p>Noscrape is a Python library that protects your web content from scraping. It uses true-type fonts with shuffled unicodes to obfuscate text, making it unreadable by standard methods while still displaying correctly in browsers. This tool helps developers secure their websites from data harvesting and unauthorized scraping.</p>
+<p><br/></p>
+<h2 id="installation">Installation</h2>
+<p>To begin, install the <em>noscrape</em> library using <code>pip</code>:</p>
+<pre><code class="language-shell">pip install noscrape
 </code></pre>
 <h2 id="new-instance"><br/> New Instance</h2>
 <p>Create a new instance of the <em>noscrape</em> class by providing the path to your desired font file. This sets up <em>noscrape</em>
 to use the specified font for obfuscating text:</p>
-<pre><code># with require
-const { Noscrape } = require("noscrape");
+<pre><code class="language-python">from noscrape import Noscrape
 
-# or import (ECMAScript Module)
-import { Noscrape } from "noscrape";
-
-const noscrape = new Noscrape("path/to/font.ttf");
+noscrape_instance = Noscrape("/path/to/font.ttf")
 </code></pre>
 <h2 id="obfuscation"><br/> Obfuscation</h2>
 <p>Obfuscate your text by calling the obfuscate method on your <em>noscrape</em> instance. This will convert your text into a
 series of unique characters from the Private Use Area (PUA) of Unicode, making it unreadable by standard means:</p>
-<pre><code>const obfuscatedText = noscrape.obfuscate("text to obfuscate");
+<pre><code class="language-python">text = noscrape.obfuscate("text to obfuscate")
+print(text)
+# 
 
-console.log(obfuscatedText);
-&gt; 
+# one could also obfuscate an integer
+obfuscatedInt = noscrape.obfuscate(1337)
 
-
-// one could also obfuscate an integer
-obfuscatedInt = noscrape.obfuscate(1337);
-
-
-// or an array
-obfuscatedArray = noscrape.obfuscate({
-    test: "This is a Test",
-    another: {
-        test: "This is another Test",
-    }
-});
+# or an list
+input_list = ["text1", 1234, "this is the output", 5678]
+obfuscated_list = noscrape.obfuscate(input_list)
+print("%s" % json.dumps(obfuscated_list, ensure_ascii=False))
+# ["", "", "", ""]
 </code></pre>
 <h2 id="rendering"><br/> Rendering</h2>
 <p>Render the obfuscated font into a Base64-encoded string using the render method. This encoded string can then be
 embedded directly into your HTML for easy use:</p>
-<pre><code>const b64Font = noscrape.render();
+<pre><code class="language-python">b64_font = noscrape.render()
+print(b64_font)
 
-console.log(b64Font.toString("base64");
-&gt; T1RUTwAJAIAAAwAQQ0ZGIIaTIyUAAAVkAAARe09TLzL4TxrlAAABAAAAAGBjbWFwACT...
+# T1RUTwAJAIAAAwAQQ0ZGIIaTIyUAAAVkAAARe09TLzL4TxrlAAABAAAAAGBjbWFwACT...
 </code></pre>
 <h2 id="putting-it-together"><br/> Putting it together</h2>
 <p>Combine everything into a complete HTML document. Embed the Base64-encoded font directly in your HTML using the
 @font-face rule and apply the obfuscated font to your text with CSS. This ensures that the obfuscated text is displayed
 correctly in the browser:</p>
-<pre><code>&lt;html lang="en"&gt;
+<pre><code class="language-html">&lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;title&gt;Noscrape - DEMO&lt;/title&gt;
     &lt;style&gt;
         @font-face {
             font-family: 'noscrape-obfuscated';
-            src: url('data:font/truetype;charset=utf-8;base64,${font.toString("base64")}');
+            src: url('data:font/truetype;charset=utf-8;base64,{{b64_font}}');
         }
     &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div style="font-family: 'noscrape-obfuscated'"&gt;${obfuscated}&lt;/div&gt;
+    &lt;div style="font-family: 'noscrape-obfuscated'"&gt;{{obfuscated_text}}&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h2 id="running-example"><br/> Running Example</h2>
-<pre><code>$ git clone git@github.com:noscrape/noscrape-node-example.git
-$ cd noscrape-node-example
-$ npm install
-$ node src/index.js
-</code></pre>
-<p>open <a href="http://localhost:1234">http://localhost:1234</a></p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
-<a class="btn btn-neutral float-left" href="../non-use-cases/" title="NON-Use Cases"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-<a class="btn btn-neutral float-right" href="../php/" title="PHP">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral float-left" href="../php/" title="PHP"><span class="icon icon-circle-arrow-left"></span> Previous</a>
 </div>
 <hr/>
 <div role="contentinfo">
@@ -192,8 +175,7 @@ $ node src/index.js
 <span>
 <a class="fa fa-code-fork" href="https://github.com/noscrape" style="color: #fcfcfc"> Noscrape</a>
 </span>
-<span><a href="../non-use-cases/" style="color: #fcfcfc">« Previous</a></span>
-<span><a href="../php/" style="color: #fcfcfc">Next »</a></span>
+<span><a href="../php/" style="color: #fcfcfc">« Previous</a></span>
 </span>
 </div>
 <script src="../js/jquery-3.6.0.min.js"></script>
