@@ -93,9 +93,9 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="welcome-to-noscrape">Welcome to <em>noscrape</em></h1>
-<p>Welcome to the official documentation for <strong>noscrape</strong>! This guide will help you understand the concept, usage, and benefits of integrating noscrape into your projects.</p>
+<p>Welcome to the official documentation for <em>noscrape</em>! This guide will help you understand the concept, usage, and benefits of integrating <em>noscrape</em> into your projects.</p>
 <h2 id="concept">Concept</h2>
-<p>The primary mechanism behind noscrape is the utilization of any true-type font. Noscrape generates a new version with shuffled unicodes, ensuring that it's impossible to reverse-calculate them. This means that both strings and integers are obfuscated and can only be deciphered using the generated obfuscation-font.</p>
+<p>The primary mechanism behind <em>noscrape</em> is the utilization of any true-type font. <em>Noscrape</em> generates a new version with shuffled unicodes, ensuring that it's impossible to reverse-calculate them. This means that both strings and integers are obfuscated and can only be deciphered using the generated obfuscation-font.</p>
 <p>While the glyph-paths inside the font cannot be entirely removed, they are obfuscated by randomly shifting them slightly. This makes it challenging to reverse-calculate them, though not entirely impossible, especially for machine learning algorithms. We are open to suggestions for improving this aspect.</p>
 <div class="mermaid">sequenceDiagram
     participant User
@@ -112,7 +112,7 @@
     Server-&gt;&gt;User: Send HTML Response with Obfuscated Text and Embedded Font
 </div>
 <h2 id="platform-implementation"><br/> Platform Implementation</h2>
-<p><strong>noscrape</strong> is not implemented directly in every programming language. Instead, it utilizes platform-specific binaries to achieve its functionality. These binaries include:</p>
+<p><em>noscrape</em> is not implemented directly in every programming language. Instead, it utilizes platform-specific binaries to achieve its functionality. These binaries include:</p>
 <ul>
 <li><code>noscrape_darwin_arm64</code></li>
 <li><code>noscrape_darwin_x86_64</code></li>
@@ -120,20 +120,22 @@
 <li><code>noscrape_linux_x86_64</code></li>
 <li><code>noscrape_windows_x86_64.exe</code></li>
 </ul>
-<p>These binaries serve as the core engine of <strong>noscrape</strong>, handling the generation of obfuscated text using true-type fonts with shuffled unicodes. They are compiled to run efficiently on specific operating systems and architectures.</p>
-<p><strong>Note:</strong> If you require <strong>noscrape</strong> for a different operating system or architecture combination, please open a GitHub issue, and we'll work on providing support for it.</p>
+<p>These binaries serve as the core engine of <em>noscrape</em>,
+handling the generation of obfuscated text using true-type fonts with shuffled unicodes.
+They are compiled to run efficiently on specific operating systems and architectures.</p>
+<p><strong>Note:</strong> If you require <em>noscrape</em> for a different operating system or architecture combination, please open a GitHub issue, and we'll work on providing support for it.</p>
 <h2 id="wrapper-implementations">Wrapper Implementations</h2>
-<p>The implementations provided in languages such as PHP, Java, and Node.js act as wrappers for these binaries. Their main purpose is to facilitate communication with the <strong>noscrape</strong> binaries, providing them with the necessary inputs and configurations to generate obfuscated text.</p>
+<p>The implementations provided in languages such as PHP, Java, and Node.js act as wrappers for these binaries. Their main purpose is to facilitate communication with the <em>noscrape</em> binaries, providing them with the necessary inputs and configurations to generate obfuscated text.</p>
 <p>These wrapper implementations handle tasks such as:</p>
 <ul>
 <li>Collecting input data from the application or user.</li>
-<li>Calling the appropriate <strong>noscrape</strong> binary based on the host platform.</li>
-<li>Passing the input data to the <strong>noscrape</strong> binary for obfuscation.</li>
+<li>Calling the appropriate <em>noscrape</em> binary based on the host platform.</li>
+<li>Passing the input data to the <em>noscrape</em> binary for obfuscation.</li>
 <li>Returning the obfuscated text or other outputs back to the application.</li>
 </ul>
-<p>By utilizing wrappers, <strong>noscrape</strong> can seamlessly integrate with a wide range of programming languages and environments while maintaining its core functionality across different platforms.</p>
+<p>By utilizing wrappers, <em>noscrape</em> can seamlessly integrate with a wide range of programming languages and environments while maintaining its core functionality across different platforms.</p>
 <hr/>
-<p>Let's make the web a safer place with noscrape!</p>
+<p>Let's make the web a safer place with <em>noscrape</em>!</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
@@ -174,5 +176,5 @@ mermaid.initialize({});</script></body>
 </html>
 <!--
 MkDocs version : 1.6.0
-Build Date UTC : 2024-06-07 20:39:58.479406+00:00
+Build Date UTC : 2024-06-07 20:53:43.185668+00:00
 -->

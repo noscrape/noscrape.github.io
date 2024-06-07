@@ -9,7 +9,7 @@ noscrape_url: https://github.com/noscrape
 
 # Welcome to *noscrape*
 
-Welcome to the official documentation for *noscrape*! This guide will help you understand the concept, usage, and benefits of integrating noscrape into your projects.
+Welcome to the official documentation for *noscrape*! This guide will help you understand the concept, usage, and benefits of integrating *noscrape* into your projects.
 
 ## Concept
 
